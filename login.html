@@ -1,0 +1,15 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a0612"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Love Connect"><link rel="icon" href="icon.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="responsive.css"><title>Log in · Love Connect</title></head>
+<body data-page="login"><div class="auth"><div class="card">
+<div class="brand">Love Connect ❤</div><p class="muted center" style="margin-bottom:20px">Where hearts find each other</p>
+<div id="loginBox"><form id="loginForm"><label class="field"><span>Email</span><input id="email" type="email" autocomplete="email" required></label>
+<label class="field"><span>Password</span><input id="password" type="password" autocomplete="current-password" required></label>
+<button class="btn block" id="loginBtn">Log in</button></form>
+<p class="center" style="margin-top:14px"><a href="#" id="toForgot">Forgot password?</a></p>
+<p class="center muted" style="margin-top:8px">New here? <a href="register.html">Create an account</a></p></div>
+<div id="forgotBox" class="hidden"><form id="forgotForm"><label class="field"><span>Your account email</span><input id="femail" type="email" required></label>
+<button class="btn block" id="forgotBtn">Send reset link</button></form><p class="center" style="margin-top:14px"><a href="#" id="toLogin">← Back to log in</a></p></div>
+<div id="resetBox" class="hidden"><h3 style="margin-bottom:12px">Choose a new password</h3><form id="resetForm">
+<label class="field"><span>New password</span><input id="np1" type="password" minlength="8" autocomplete="new-password" required></label>
+<label class="field"><span>Repeat password</span><input id="np2" type="password" minlength="8" autocomplete="new-password" required></label>
+<button class="btn block">Update password</button></form></div>
+</div></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="config.js"></script><script src="supabase.js"></script><script src="auth.js"></script></body></html>
